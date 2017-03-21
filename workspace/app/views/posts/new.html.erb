@@ -1,0 +1,35 @@
+
+<h1>Pink Hat LLc</h1>
+<b>Woman based information security blog headed by Swetha Vennapoosa.</b>
+<b>Please post latest information security related information.</b>
+   
+ 
+   
+   
+   
+   <h1> Please use the form below </h1>
+   
+   <%= form_for (@post) do |f| %>
+   
+   
+   
+   <%= f.label :title %><br>
+   <%= f.text_field :title %><br>
+   
+   
+   <br>
+    <%= f.label :text %><br>
+    <%= f.text_area :text %><br>
+    
+  
+   <br>
+   
+   
+   <%= f.submit %> <br>
+   
+   
+   
+   
+   <% end %>
+    
+

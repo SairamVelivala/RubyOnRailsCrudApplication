@@ -1,0 +1,16 @@
+<h1>Pink Hat LLc</h1>
+<b>Woman based information security blog headed by Swetha Vennapoosa.</b>
+<b>Please check if your post posted sucessfully</b>
+
+
+
+<h2><%= @post.title %></h2>
+
+<div>
+    
+    <%= @post.text %>
+</div>
+
+<br> 
+<%= link_to "Edit Post", edit_post_path(@post) %>
+<%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Do you really want to delete"}%>

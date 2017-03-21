@@ -1,0 +1,17 @@
+<div id ="index1">
+   
+   
+
+<h1 >Pink Hat LLc</h1>
+<b>Woman based information security blog headed by Swetha Vennapoosa.</b>
+<b>Please check for latest information security related information.</b>
+
+
+
+<% @posts.each do |post| %>
+   <h2><%=post.title  %></h2>
+   <div><%= truncate(post.text, :length =>25 ) %></div>
+   <%= link_to "Read Posts", post  %>
+   <% end %>
+   
+ </div>
